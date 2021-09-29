@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    
+}
+
+.bg_image{
+    background: url("./images/pattern-background-mobile.svg") no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1px;
+}
+
+h1{
+    text-align: center;
+    font-style: unset;
+    color: hsl(223, 47%, 23%);
+    padding-top: 10px;
+}
+
+p{
+    text-align: center;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.square{
+    display: inline;
+    background-color: white;
+    margin: 15px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 1px lightgrey;
+}
+
+.square #img1{
+    width: 100%;
+}
+
+
+.btn{
+    margin-left: 50px;
+    margin-top: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    cursor: pointer;
+    width: 350px;
+    height: 49px;
+    border-radius: 8px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-style: unset;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.square .rectangle{
+    margin: 10px 50px;
+    
+}
+.rectangle{
+    background-color: hsl(225, 100%, 98%);
+    height: 90px;
+    width: 358px;
+    margin-left: 20px;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+    
+}
+.rectangle img{
+    margin: 20px 22px auto;
+}
+
+.rectangle h4 {
+    font-style: unset;
+    color: hsl(223, 47%, 23%);
+    margin-top: -50px;
+    margin-left: 90px;
+}
+.rectangle span{
+    color: hsl(224, 23%, 55%);
+    
+}
+
+h4 a{
+    justify-content: end;
+    padding-left: 80px;
+    size: 20px;
+}
+
+
+.btn-secon{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-style: unset;
+    font-weight: bold;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    padding-top: 20px;
+    padding-left: 180px;
+}
+.btn-secon:hover{
+    color: hsl(223, 51%, 56%);
+
+}
+
+@media (max-width: 768px) {
+    .bg_image{
+        background: url("./images/pattern-background-mobile.svg") no-repeat center/cover;
+        height: 50vh; 
+    }  
+}
